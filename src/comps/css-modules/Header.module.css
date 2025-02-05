@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
+.container {
+  width: 100%;
+  margin: 0 auto;
+  background-color: #1F002C;
+  height: 50%;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 80px;
+  height: 70px;
+}
+
+.mobileMenu {
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: -999px;
+  background-color: #1F002C;
+  -webkit-transition: 0.5s left ease-in-out;
+  transition: 0.5s left ease-in-out;
+  width: 100%;
+  height: 100%;
+}
+.mobileMenu.open {
+  left: 0;
+}
+.mobileMenu .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: Carla;
+  font-size: 28px;
+  font-weight: 700;
+  text-decoration: none;
+  list-style-type: none;
+}
+.items .item {
+  width: 100%;
+  color: #FFF5FF;
+}
